@@ -64,17 +64,17 @@ const Navbar = () => {
                                     Find me in
                                 </h2>
                                 <div className="flex gap-4">
-                                    <a href="https://www.facebook.com/profile.php?id=100014523406673&mibextid=LQQJ4d">
+                                    <a href="https://www.facebook.com/profile.php?id=100038687656028">
                                         <span className="bannerIcon">
                                             <FaFacebookF />
                                         </span>
                                     </a>
-                                    <a href="https://github.com/danglinh2k1">
+                                    <a href="https://github.com/VanCuong2002">
                                         <span className="bannerIcon">
                                             <FaGithub />
                                         </span>
                                     </a>
-                                    <a href="mailto:danglinh10062001@gmail.com">
+                                    <a href="mailto:cuongcoca12345@gmail.com">
                                         <span className="bannerIcon">
                                             <SiGmail />
                                         </span>
