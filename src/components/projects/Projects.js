@@ -78,8 +78,8 @@ const Projects = () => {
                     title="Crush"
                     des="The website Crush Confession is not only a place to share feelings but also a unique and interesting experience for users. Using a sophisticated combination of HTML, CSS and JavaScript, this website offers eye-catching animations and features."
                     src={crush}
-                    url={url.pr5}
-                    website={website.wb5}
+                    url={url.pr6}
+                    website={website.wb6}
                 />
             </div>
         </section>
