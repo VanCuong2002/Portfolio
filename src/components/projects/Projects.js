@@ -13,15 +13,15 @@ import ProjectsCard from "./ProjectsCard";
 const Projects = () => {
     const url = {
         pr1: "https://github.com/VanCuong2002/My-Card",
-        pr2: "https://github.com/danglinh2k1/my_card.git",
+        pr2: "https://github.com/VanCuong2002/Portfolio",
         pr3: "https://github.com/VanCuong2002/Weather-App",
         pr4: "https://github.com/VanCuong2002/Shopping-Cart",
         pr5: "https://github.com/VanCuong2002/Music",
         pr6: "https://github.com/VanCuong2002/Crush",
     };
     const website = {
-        wb1: "https://my-card-peach.vercel.app/",
-        wb2: "https://my-card-peach.vercel.app/",
+        wb1: "https://my-card-ruby.vercel.app/",
+        wb2: "https://cuongdev.id.vn/",
         wb3: "https://weather-app-three-gold-23.vercel.app/",
         wb4: "https://shopping-cart-eta-coral.vercel.app/",
         wb5: "https://music-wine-eight.vercel.app/",
