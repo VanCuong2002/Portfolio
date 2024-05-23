@@ -56,28 +56,48 @@ const LeftBanner = () => {
                         Find me in
                     </h2>
                     <div className="grid gap-x-8 gap-y-4 grid-cols-3">
-                        <a href="https://www.facebook.com/profile.php?id=100038687656028">
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://www.facebook.com/profile.php?id=100038687656028"
+                        >
                             <span className="bannerIcon">
                                 <FaFacebookF />
                             </span>
                         </a>
-                        <a href="https://zalo.me/0965469714">
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://zalo.me/0965469714"
+                        >
                             <span className="bannerIcon">Zalo</span>
                         </a>
                         <span className="bannerIcon">
                             <FaLinkedinIn />
                         </span>
-                        <a href="https://www.tiktok.com/@cuongcoca050102">
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://www.tiktok.com/@cuongcoca050102"
+                        >
                             <span className="bannerIcon">
                                 <FaTiktok />
                             </span>
                         </a>
-                        <a href="mailto:cuongcoca12345@gmail.com">
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="mailto:cuongcoca12345@gmail.com"
+                        >
                             <span class="bannerIcon">
                                 <SiGmail />
                             </span>
                         </a>
-                        <a href="https://www.instagram.com/cuongcoca17/?igsh=bGI5MWVxd29taG0w&utm_source=qr">
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://www.instagram.com/cuongcoca17/?igsh=bGI5MWVxd29taG0w&utm_source=qr"
+                        >
                             <span className="bannerIcon">
                                 <SiInstagram />
                             </span>

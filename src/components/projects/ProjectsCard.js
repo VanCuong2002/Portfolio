@@ -20,12 +20,16 @@ const ProjectsCard = ({ title, des, src, url, website }) => {
                         </h3>
                         <div className="flex gap-2">
                             <span className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
-                                <a href={url}>
+                                <a target="_blank" href={url} rel="noreferrer">
                                     <BsGithub />
                                 </a>
                             </span>
                             <span className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
-                                <a href={website}>
+                                <a
+                                    target="_blank"
+                                    href={website}
+                                    rel="noreferrer"
+                                >
                                     <FaGlobe />
                                 </a>
                             </span>

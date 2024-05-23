@@ -3,7 +3,7 @@ import Title from "../layouts/Title";
 import {
     card,
     music,
-    crush,
+    shopee,
     profile,
     shoppingCart,
     weatherApp,
@@ -17,7 +17,7 @@ const Projects = () => {
         pr3: "https://github.com/VanCuong2002/Weather-App",
         pr4: "https://github.com/VanCuong2002/Shopping-Cart",
         pr5: "https://github.com/VanCuong2002/Music",
-        pr6: "https://github.com/VanCuong2002/Crush",
+        pr6: "https://github.com/VanCuong2002/Shopee",
     };
     const website = {
         wb1: "https://my-card-ruby.vercel.app/",
@@ -25,7 +25,7 @@ const Projects = () => {
         wb3: "https://weather-app-three-gold-23.vercel.app/",
         wb4: "https://shopping-cart-eta-coral.vercel.app/",
         wb5: "https://music-wine-eight.vercel.app/",
-        wb6: "https://crush-mu-peach.vercel.app/",
+        wb6: "https://shopee-opal.vercel.app/",
     };
     return (
         <section
@@ -75,9 +75,10 @@ const Projects = () => {
                     website={website.wb5}
                 />
                 <ProjectsCard
-                    title="Crush"
-                    des="The website Crush Confession is not only a place to share feelings but also a unique and interesting experience for users. Using a sophisticated combination of HTML, CSS and JavaScript, this website offers eye-catching animations and features."
-                    src={crush}
+                    title="Shopee"
+                    des="
+                    Introducing our Shopee Clone project powered by Tailwind CSS, React, React Query, and JWT. Experience modern UI with Tailwind, seamless interactions with React, efficient data handling with React Query, and secure authentication using JWT. Stay tuned for this exciting e-commerce platform!"
+                    src={shopee}
                     url={url.pr6}
                     website={website.wb6}
                 />
