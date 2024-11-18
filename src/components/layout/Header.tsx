@@ -1,17 +1,17 @@
 "use client";
 
-import * as React from "react";
 import Link from "next/link";
-import AppBar from "@mui/material/AppBar";
+import * as React from "react";
 import Box from "@mui/material/Box";
-import Divider from "@mui/material/Divider";
+import AppBar from "@mui/material/AppBar";
 import Drawer from "@mui/material/Drawer";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import { AVATAR_MYSELF, LOGO_DEFAULT } from "~/constant";
+import Divider from "@mui/material/Divider";
 import { usePathname } from "next/navigation";
+import MenuIcon from "@mui/icons-material/Menu";
+import Typography from "@mui/material/Typography";
+import IconButton from "@mui/material/IconButton";
+import { AVATAR_MYSELF, LOGO_DEFAULT } from "~/constant";
 import MaterialUISwitch from "~/components/shared/MUISwitch";
 import { useAppContext } from "~/components/shared/AppProvider";
 
