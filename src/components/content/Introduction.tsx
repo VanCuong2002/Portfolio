@@ -1,9 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
+import { scrollToSection } from "~/utils";
+import Loading from "~/components/shared/Loading";
 import { codeString, socials } from "~/constant/data";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import { handleDownload, scrollToSection } from "~/utils";
 import TypingEffect from "~/components/shared/TypingEffect";
 import { github } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { Box, Button, Grid2, keyframes, Typography } from "@mui/material";
@@ -21,6 +23,32 @@ const waveAnimation = keyframes`
 `;
 
 export default function Introduction() {
+    const [loading, setLoading] = useState(false);
+
+    const handleDownload = async () => {
+        setLoading(true);
+        const proxyUrl = "https://api.allorigins.win/raw?url=";
+        const imageUrl =
+            "https://inkythuatso.com/uploads/thumbnails/800/2023/01/13-anh-meme-meo-bua-inkythuatso-17-10-37-10.jpg";
+
+        try {
+            const response = await fetch(
+                proxyUrl + encodeURIComponent(imageUrl),
+            );
+            const blob = await response.blob();
+            const url = window.URL.createObjectURL(blob);
+
+            const link = document.createElement("a");
+            link.href = url;
+            link.download = "meme_image.jpg";
+            link.click();
+            window.URL.revokeObjectURL(url);
+        } catch (error) {
+        } finally {
+            setLoading(false);
+        }
+    };
+
     return (
         <>
             <Box
@@ -418,6 +446,7 @@ export default function Introduction() {
                     </Typography>
                 </Grid2>
             </Grid2>
+            <Loading open={loading} />
         </>
     );
 }

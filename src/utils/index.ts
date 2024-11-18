@@ -27,21 +27,3 @@ export const maskEmail = (email: string) => {
 
     return `${maskedLocalPart}@${domainPart}`;
 };
-
-export const handleDownload = async () => {
-    const proxyUrl = "https://api.allorigins.win/raw?url=";
-    const imageUrl =
-        "https://inkythuatso.com/uploads/thumbnails/800/2023/01/13-anh-meme-meo-bua-inkythuatso-17-10-37-10.jpg";
-
-    try {
-        const response = await fetch(proxyUrl + encodeURIComponent(imageUrl));
-        const blob = await response.blob();
-        const url = window.URL.createObjectURL(blob);
-
-        const link = document.createElement("a");
-        link.href = url;
-        link.download = "meme_image.jpg";
-        link.click();
-        window.URL.revokeObjectURL(url);
-    } catch (error) {}
-};

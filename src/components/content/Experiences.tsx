@@ -1,10 +1,10 @@
 "use client";
 
 import { BG_EXPERIENCES } from "~/constant";
-import { experiences } from "~/constant/data";
 import Divider from "~/components/shared/Divider";
 import { Box, Grid2, Typography } from "@mui/material";
 import { useAppContext } from "~/components/shared/AppProvider";
+import { experiences } from "~/constant/data";
 
 export default function Experiences() {
     const { mode } = useAppContext();
@@ -26,7 +26,7 @@ export default function Experiences() {
             >
                 Experiences
             </Typography>
-            <Grid2 container spacing={2}>
+            <Grid2 container spacing={{ xs: 1, sm: 2 }}>
                 <Grid2 size={{ xs: 12, sm: 5, md: 6 }} display="flex">
                     <Box
                         component="img"
@@ -54,7 +54,11 @@ export default function Experiences() {
                 </Grid2>
                 <Grid2
                     size={{ xs: 12, sm: 7, md: 6 }}
-                    sx={{ display: "flex", flexDirection: "column", gap: 4 }}
+                    sx={{
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: { xs: 2, sm: 4 },
+                    }}
                 >
                     {experiences.map((experience, index) => (
                         <Box

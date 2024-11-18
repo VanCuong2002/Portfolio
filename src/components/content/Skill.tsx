@@ -1,9 +1,9 @@
 "use client";
 
-import { skills } from "~/constant/data";
 import Marquee from "react-fast-marquee";
 import { Box, Typography } from "@mui/material";
 import { useAppContext } from "~/components/shared/AppProvider";
+import { skills } from "~/constant/data";
 
 export default function Skill() {
     const { mode } = useAppContext();
@@ -30,7 +30,7 @@ export default function Skill() {
                     <Box
                         key={index}
                         sx={{
-                            m: "12px 20px",
+                            m: { xs: "6px 12px", sm: "12px 20px" },
                             borderTopWidth: mode === "dark" ? 1 : 0,
                             borderRightWidth: 0,
                             borderBottomWidth: 0,

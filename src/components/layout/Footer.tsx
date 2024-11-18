@@ -3,15 +3,14 @@ import { Box, Typography } from "@mui/material";
 export default function Footer() {
     const getYearCurrent = new Date().getFullYear();
     return (
-        <>
-            <Box
-                sx={{
-                    height: 2,
-                    mx: { xs: 2, sm: 3 },
-                    mt: { xs: 4, sm: 8 },
-                    background: "var(--border-color)",
-                }}
-            />
+        <Box
+            sx={{
+                mx: { xs: 0, sm: 3 },
+                mt: { xs: 4, sm: 8 },
+                background: { xs: "var(--bg-footer)", sm: "none" },
+                borderTop: { xs: "none", sm: "1px solid var(--border-color)" },
+            }}
+        >
             <Typography
                 sx={{
                     height: 100,
@@ -28,6 +27,6 @@ export default function Footer() {
                 Copyright © {getYearCurrent} Văn Cường IT. Made with in VietNam
                 ❤️
             </Typography>
-        </>
+        </Box>
     );
 }

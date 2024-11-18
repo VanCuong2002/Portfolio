@@ -1,6 +1,6 @@
-import { projects } from "~/constant/data";
 import { ICON_DEMO, ICON_GITHUB } from "~/constant";
 import { Box, Button, Grid2, Typography } from "@mui/material";
+import { projects } from "~/constant/data";
 
 export default function Project() {
     return (
