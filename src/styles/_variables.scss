@@ -1,0 +1,47 @@
+:root {
+    // General
+    --primary-color: #ccc;
+    --secondary-color: #d32f2f;
+
+    // Background
+    --bg-page: #fff;
+    --bg-header: #fff;
+    --skill-card-background: #f5f6f7;
+
+    // Text
+    --text-color: #000;
+    --text-secondary: #5a6a85;
+    --brand-name-100: #ec4899;
+    --brand-name-200: #000;
+
+    //Other
+    --button-bg: #e3f2fd;
+    --border-color: #eee;
+    --boxshadow-color: #ccc;
+
+    // Unit
+    --height-header: 70px;
+    --width-desktop: 1200px;
+}
+
+.dark-mode {
+    // General
+    --primary-color: #003f72;
+    --secondary-color: #ef9a9a;
+
+    // Background
+    --bg-page: #0d1224;
+    --bg-header: transparent;
+    --skill-card-background: #11152c;
+
+    // Text
+    --text-color: #fff;
+    --text-secondary: #cfd8dc;
+    --brand-name-100: #16f2b3;
+    --brand-name-200: #ec4899;
+
+    //Other
+    --button-bg: #212121;
+    --border-color: #1b2c68a0;
+    --boxshadow-color: #1b2c68a0;
+}
