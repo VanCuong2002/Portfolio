@@ -1,6 +1,7 @@
-import { ICON_DEMO, ICON_GITHUB } from "~/constant";
-import { Box, Button, Grid2, Typography } from "@mui/material";
 import { projects } from "~/constant/data";
+import { ICON_DEMO, ICON_GITHUB, IMAGE_BLUR } from "~/constant";
+import { Box, Button, Grid2, Typography } from "@mui/material";
+import Image from "next/image";
 
 export default function Project() {
     return (
@@ -45,14 +46,15 @@ export default function Project() {
                             },
                         }}
                     >
-                        <Box
-                            component="img"
+                        <Image
+                            width={4000}
+                            height={2000}
+                            quality={90}
+                            placeholder="blur"
                             src={project.image}
                             alt={project.title}
-                            sx={{
-                                width: "100%",
-                                height: { xs: 160, sm: 180, md: 240 },
-                            }}
+                            blurDataURL={IMAGE_BLUR}
+                            className="image-project"
                         />
                         <Box p={2}>
                             <Typography

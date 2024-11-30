@@ -10,6 +10,7 @@ export const ICON_DOWNLOAD = "/icons/download.png";
 
 // IMAGE
 export const QR_CODE = "/images/QR.png";
+export const IMAGE_BLUR = "/images/blur.jpg";
 export const LOGO_DEFAULT = "/icons/logo.png";
 export const AVATAR_MYSELF = "/images/me.png";
 export const LOGO_LOADING = "/icons/loading.png";
